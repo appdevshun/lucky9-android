@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+captures/
+
+# IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Keystore: never commit signing keys
+keystore/
+*.keystore
+*.jks
+
+# Logs
+*.log

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/felt_green_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_tier"
+            android:textColor="@color/gold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/tier_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/bg_panel">
+
+            <RadioButton
+                android:id="@+id/tier_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tier_50"
+                android:textColor="@color/text_primary"
+                android:padding="6dp" />
+
+            <RadioButton
+                android:id="@+id/tier_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tier_100"
+                android:textColor="@color/text_primary"
+                android:padding="6dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/tier_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tier_200"
+                android:textColor="@color/text_primary"
+                android:padding="6dp" />
+
+            <RadioButton
+                android:id="@+id/tier_500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tier_500"
+                android:textColor="@color/text_primary"
+                android:padding="6dp" />
+
+            <RadioButton
+                android:id="@+id/tier_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tier_1000"
+                android:textColor="@color/text_primary"
+                android:padding="6dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_seats"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="20dp" />
+
+        <SeekBar
+            android:id="@+id/seats_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="6"
+            android:progress="3" />
+
+        <TextView
+            android:id="@+id/seats_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/start" />
+    </LinearLayout>
+</ScrollView>

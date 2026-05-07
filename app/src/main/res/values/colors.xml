@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="felt_green">#0F5C2E</color>
+    <color name="felt_green_dark">#073A1B</color>
+    <color name="felt_green_light">#1B7A3F</color>
+    <color name="gold">#F4C542</color>
+    <color name="gold_dark">#B8860B</color>
+    <color name="red_card">#C62828</color>
+    <color name="black_card">#1B1B1B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#FFF8E7</color>
+    <color name="banker_crown">#FFD23F</color>
+    <color name="active_glow">#7DD3FC</color>
+    <color name="win_color">#22C55E</color>
+    <color name="lose_color">#EF4444</color>
+    <color name="tie_color">#F59E0B</color>
+    <color name="dark_panel">#1F2937</color>
+    <color name="light_panel">#F3F4F6</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#E5E7EB</color>
+    <color name="text_muted">#9CA3AF</color>
+    <color name="primary">#0F5C2E</color>
+    <color name="primary_dark">#073A1B</color>
+    <color name="accent">#F4C542</color>
+</resources>

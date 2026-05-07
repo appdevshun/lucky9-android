@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/felt_green_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wallet_title"
+        android:textColor="@color/gold"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/balance"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        tools:text="1000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/academic_note"
+        android:textColor="@color/text_muted"
+        android:textSize="11sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_deposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="@string/deposit" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="@string/withdraw" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_claim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/claim_bonus"
+        android:backgroundTint="@color/gold_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactions"
+        android:textColor="@color/text_secondary"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tx_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_panel"
+        android:padding="6dp" />
+</LinearLayout>

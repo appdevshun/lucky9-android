@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_w">48dp</dimen>
+    <dimen name="card_h">68dp</dimen>
+    <dimen name="avatar_size">56dp</dimen>
+    <dimen name="winbar_seg_w">10dp</dimen>
+    <dimen name="winbar_seg_h">8dp</dimen>
+    <dimen name="winbar_gap">2dp</dimen>
+    <dimen name="padding_default">12dp</dimen>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lucky 9</string>
+
+    <!-- Main menu -->
+    <string name="menu_play_bots">Laro vs Bots</string>
+    <string name="menu_hotspot">Wi-Fi Hotspot</string>
+    <string name="menu_online">Online Multiplayer</string>
+    <string name="menu_wallet">Wallet (Pitaka)</string>
+    <string name="menu_rules">Rules (Mga Tuntunin)</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_tutorial">How to Play</string>
+    <string name="menu_quit">Quit</string>
+
+    <string name="welcome_subtitle">Filipino-style hybrid Lucky 9</string>
+
+    <!-- Game -->
+    <string name="hit">HIT (Karagdagang Card)</string>
+    <string name="stand">STAND (Tigil)</string>
+    <string name="bet">Bet (Pusta)</string>
+    <string name="round">Round</string>
+    <string name="jackpot">Jackpot</string>
+    <string name="banker">Banker</string>
+    <string name="player">Player</string>
+    <string name="you">YOU</string>
+    <string name="natural9">Natural 9!</string>
+    <string name="tie">TIE</string>
+    <string name="win">WIN</string>
+    <string name="lose">LOSE</string>
+    <string name="auto_stand">Auto-Stand</string>
+    <string name="auto_bet">Auto-Bet</string>
+
+    <!-- Wallet -->
+    <string name="wallet_title">Wallet</string>
+    <string name="balance">Balance</string>
+    <string name="deposit">Deposit (Simulated)</string>
+    <string name="withdraw">Withdraw (Simulated)</string>
+    <string name="claim_bonus">Claim Daily Bonus</string>
+    <string name="transactions">Transactions</string>
+    <string name="amount">Amount</string>
+    <string name="academic_note">Academic demonstration. No real money is processed. All currency is virtual.</string>
+    <string name="bonus_already_claimed">Daily bonus already claimed today.</string>
+    <string name="bonus_granted">Daily bonus granted!</string>
+
+    <!-- Tier select -->
+    <string name="select_tier">Select Table Tier</string>
+    <string name="tier_50">Tier 50</string>
+    <string name="tier_100">Tier 100</string>
+    <string name="tier_200">Tier 200</string>
+    <string name="tier_500">Tier 500</string>
+    <string name="tier_1000">Tier 1000</string>
+    <string name="select_seats">Number of seats (2–8)</string>
+    <string name="start">Start</string>
+    <string name="not_enough_balance">Wallet below tier minimum.</string>
+
+    <!-- Rules -->
+    <string name="rules_title">Lucky 9 — Rules</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_sound">Sound effects</string>
+    <string name="settings_tagalog">Show Tagalog labels</string>
+    <string name="settings_relay_url">Online relay server URL</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title">How to Play Lucky 9</string>
+
+    <!-- Hotspot -->
+    <string name="hotspot_title">Wi-Fi Hotspot</string>
+    <string name="hotspot_coming_soon">Wi-Fi Hotspot multiplayer scaffolding is in place. Full networking will be enabled in a future release.</string>
+
+    <!-- Online -->
+    <string name="online_title">Online Multiplayer</string>
+    <string name="online_coming_soon">Online multiplayer scaffolding is in place. Connect a Node.js relay server to enable.</string>
+    <string name="room_code">Room code</string>
+    <string name="create_room">Create Room</string>
+    <string name="join_room">Join Room</string>
+
+    <!-- Misc -->
+    <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="lockout">You are locked out of this tier — top up to continue.</string>
+    <string name="topup_warning">Wallet below tier minimum. Consider topping up.</string>
+
+    <string name="rules_full">
+        <![CDATA[
+<b>Lucky 9 — Filipino Hybrid (Rotating Banker)</b><br/><br/>
+<b>Card values</b>: A=1, 2–9 face value, 10/J/Q/K=0. Hand value is the sum modulo 10. Max 3 cards per hand.<br/><br/>
+<b>Round flow</b>: Betting (5s) → Pre-deal pause (2s) → Deal 2 cards → auto-reveal Natural 9 if any → Hit/Stand (5s/player) → Banker plays → Reveal (1s/player; banker last) → Settlement.<br/><br/>
+<b>Natural 9</b> = first two cards summing to 9. Player N9 auto-stands and cannot lose. Banker N9 wins all (except ties vs Natural 9). Both N9 = tie + both get a win bar. Natural 9 vs 3-card 9 = tie + both get a win bar.<br/><br/>
+<b>Win/Loss</b>: Player beats banker = 1:1; Player Natural 9 beats banker = 1.5:1; Banker beats player = banker takes player\'s bet; Tie = no money changes hands.<br/><br/>
+<b>Win Bars</b>: 5 segments. Win or tie = +1 bar (both parties on tie). First to 5 wins the jackpot. Multi-winner same round = split equally.<br/><br/>
+<b>Jackpot</b>: every non-banker pays the table ante each round into the pool. Resets when paid.<br/><br/>
+<b>Tier rules</b>: Reserve = 90% of tier minimum. Min bet = 3% of tier minimum. Ante = 50% of min bet. Max bet = (banker wallet − reserve) ÷ non-banker count.<br/><br/>
+<b>Banker rotation</b>: Clockwise each round. Banker is skipped if (wallet − reserve) ÷ players &lt; min bet.<br/><br/>
+<b>Wallet safeguards</b>: Entry requires wallet ≥ tier minimum. No all-in: bet capped to keep wallet ≥ tier minimum. Lockout if wallet drops below 20% of tier minimum.<br/><br/>
+<b>Currency</b>: Virtual play money only. Deposit/withdraw are simulated database operations for academic demonstration.
+        ]]>
+    </string>
+
+    <string name="tutorial_steps">
+        <![CDATA[
+<b>1. Choose your table</b><br/>
+Pick a tier you can afford (your wallet must be ≥ the tier minimum).<br/><br/>
+<b>2. Place your bet</b><br/>
+Each round you have 5 seconds to bet. The minimum is 3%% of the tier value. The max depends on how much the banker can cover.<br/><br/>
+<b>3. Hit or Stand</b><br/>
+You get 2 cards face-down. If they total 9 (Natural 9), you auto-stand. Otherwise, choose HIT for a third card (max 3 cards) or STAND.<br/><br/>
+<b>4. Banker reveals last</b><br/>
+Cards flip in order. Compare your hand vs the banker. Modulo 10 — only the last digit counts.<br/><br/>
+<b>5. Race to 5</b><br/>
+Win or tie = +1 win bar. Reach 5 first and you win the jackpot. Then the bars reset.<br/><br/>
+<b>6. Banker rotates</b><br/>
+The crown moves clockwise each round.
+        ]]>
+    </string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/felt_green_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_subtitle"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_panel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_play_bots"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_play_bots" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_hotspot"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_hotspot" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_online"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_online" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_wallet"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_wallet" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rules"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_rules" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tutorial"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_tutorial" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_settings"
+            style="@style/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_settings" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/academic_note"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

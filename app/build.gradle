@@ -10,8 +10,8 @@ android {
         applicationId "com.lucky9.app"
         minSdk 26
         targetSdk 34
-        versionCode 3
-        versionName "1.0.2-probe"
+        versionCode 4
+        versionName "1.0.3-probe"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions {

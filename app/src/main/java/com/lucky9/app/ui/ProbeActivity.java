@@ -58,6 +58,18 @@ public class ProbeActivity extends Activity {
 
         runProbe(log, "R.string.app_name", () -> getString(R.string.app_name));
 
+        runProbe(log, "Theme.AppCompat resolve", () -> {
+            android.view.ContextThemeWrapper c = new android.view.ContextThemeWrapper(this,
+                    androidx.appcompat.R.style.Theme_AppCompat_DayNight_NoActionBar);
+            return c.getTheme() != null ? "ok" : "null";
+        });
+
+        runProbe(log, "Theme.MaterialComponents resolve", () -> {
+            android.view.ContextThemeWrapper c = new android.view.ContextThemeWrapper(this,
+                    com.google.android.material.R.style.Theme_MaterialComponents_DayNight_NoActionBar);
+            return c.getTheme() != null ? "ok" : "null";
+        });
+
         runProbe(log, "Inflate activity_main", () -> {
             View v = getLayoutInflater().inflate(R.layout.activity_main, null);
             return v == null ? "null view" : v.getClass().getSimpleName();

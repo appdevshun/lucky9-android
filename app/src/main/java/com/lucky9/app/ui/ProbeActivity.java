@@ -54,9 +54,7 @@ public class ProbeActivity extends Activity {
             return a == null ? "null Application" : a.getClass().getName();
         });
 
-        runProbe(log, "App is com.lucky9.app.App", () -> {
-            return getApplication() instanceof App ? "ok" : ("got " + getApplication().getClass().getName());
-        });
+        runProbe(log, "Application class name", () -> getApplication().getClass().getName());
 
         runProbe(log, "R.string.app_name", () -> getString(R.string.app_name));
 
